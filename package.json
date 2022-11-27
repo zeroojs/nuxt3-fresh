@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs",
+    "start:pm2": "pm2 start npm --name nuxt3:3000 -- run start",
+    "deploy": "docker-compose up -d"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "pm2": "^5.2.2"
+  }
+}
